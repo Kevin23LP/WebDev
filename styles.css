@@ -1,0 +1,675 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header{
+  background-image:linear-gradient(45deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.596) ), url(krystal-ng-PrQqQVPzmlw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.Navboxmenu{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  height: 80px;
+  width: 100%;
+  min-width: 320px;
+  align-items: center;
+  transition: all ease-out 0.3s;
+  position: static;
+  z-index: 1;
+}
+.navmenuon{
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  transition: all ease-out 0.3s;
+}
+.navmenuof{
+  position: static;
+  background-color: transparent;
+}
+.navmenuon .navlinks{
+  color: rgb(7, 7, 92);
+}
+
+.logobox a{
+  font-size: 40px;
+  text-decoration: none;
+  color: rgb(108, 108, 223);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+.navmenu{
+  display: none;
+}
+.navlinksbox{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+.navlinks{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 200px;
+  transition: all ease-out 0.3s;
+  position: relative;
+  display: inline-block;
+}
+.navlinks::after{
+  content: "";
+  width: 0%;
+  height: 1px;
+  transition: all ease-out 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+}
+
+.navlinks:hover::after{
+  width: 100%;
+}
+.navlinkbtn{
+  background-color: rgb(108, 108, 223);
+  padding: 15px;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: all ease-out 0.3s;
+}
+.navlinkbtn:hover{
+  background-color: white;
+  color: rgb(91, 91, 235);
+}
+
+.herobox{
+  display: flex;
+  padding: 0px 100px;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.txthero{
+  width: 50%;
+  height: 100%;
+  
+}
+.txthero h3{
+  position: relative;
+  display: block;
+  margin-top: 15%;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: white;
+  transition: all  ease-out 1s;
+
+}
+.txthero h3::before{
+  content: "";
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  background-color: blue;
+  left: -10px;
+  border-radius: 100px;
+}
+.about h3{
+  color: rgb(105, 255, 105);
+}
+.about p{
+  color: lightgreen;
+}
+.txthero h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+
+  
+  transition: all ease-out 1s;
+}
+
+.txthero p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+}
+.txthero a{
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 300px;
+  margin-top: 20px;
+  background-color: rgb(108, 108, 223);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: all ease-out 0.3s;
+}
+.txthero a:hover{
+  background-color: blue;
+  color: white;
+}
+.imghero{
+  width: 50%;
+  height: 100%;
+}
+.imghero img{
+  width: 100%;
+  height: 100%;
+}
+
+.aboutussection{
+  padding: 100px 100px 0px 100px;
+  width: 100%;
+  
+}
+
+.titleus{
+  
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.titleus h1{
+  color: blue;
+  position: relative;
+  text-align: center;
+}
+.titleus h1::before{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  border-radius: 200px;
+  background-color: blue;
+  
+}
+.contentus{
+  display: flex;
+  width: 100%;
+  
+}
+.imgusdiv{
+  width: 50%;
+  height: 100%;
+}
+.imgusdiv img{
+  width: 500px;
+  
+}
+.txtusdiv{
+  width: 50%;
+  
+}
+.txtusdiv h1{
+  display: inline-block;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(148, 148, 233);
+  font-size: 30px;
+  position: relative;
+}
+.txtusdiv h1::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: yellow;
+  left: -10px;
+  border-radius: 200px;
+  
+}
+.parrapus p{
+  display: inline-block;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+
+}
+.uscta{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: blue;
+  border-radius: 220px;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  transition: all ease-out 0.3s;
+}
+.uscta:hover{
+  background-color: rgb(105, 105, 201);
+  
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+}
+.card p {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+}
+.card button {
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: #555;
+}
+
+.servicesection{
+  width: 100%;
+  background-image: linear-gradient(0deg, rgb(216, 216, 255), white);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  padding: 100px;
+}
+.carsection{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.servicecard{
+  width: 300px;
+
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 10px;
+}
+.servicestitle{
+  text-align: center;
+  position: relative;
+}
+.servicestitle h1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  font-weight: 900;
+  position: relative;
+}
+.servicestitle h1::after{
+  content: "";
+  width: 50px;
+  height: 5px;
+  right: 0;
+  position: absolute;
+  background-color: rgb(0, 0, 153);
+  border-radius: 200px;
+}
+.servicestitle p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+}
+.servicecard h1{
+  font-family: "Montserrat", sans-serif;
+}
+.servicecard p{
+  font-family: "Montserrat", sans-serif;
+}
+.servicescta{
+  padding: 15px;
+  background-color: blue;
+  border-radius: 100px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+.destaquedcard{
+  background-color: rgb(170, 170, 255);
+}
+.destaquedcard2{
+  border: 1px solid rgb(152, 152, 255);
+}.destaquedcard3{
+  border: 1px solid rgb(152, 255, 178);
+}
+.destaquedcard3 p{
+  display: inline-block;
+  margin-top: 30px;
+}
+.infoserv{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgb(152, 255, 178);
+  color: rgb(0, 0, 0);
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.skillelement{
+  display: flex;
+  align-items: center;
+  
+}
+.skillsectionelements{
+  display: flex;
+  background-color: rgb(235, 230, 255);
+  border-radius: 4px;
+}
+.carsdskills{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  margin: auto;
+}
+.infoskills{
+  width: 40%;
+  text-align: center;
+  background-color: rgb(151, 151, 255);
+  border-radius: 4px;
+  padding: 10px;
+}
+.allskillsbox{
+  padding: 100px;
+  width: 100%;
+}
+.skillsttle{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+.skillsttle h1{
+  color: blue;
+  display: inline-block;
+  position: relative;
+}
+.skillsttle h1::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  right: 0;
+  background-color: rgb(90, 255, 85);
+}
+.infoskills h1{
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin-top: 30px;
+  color: rgb(90, 255, 85);
+  font-size: 35px;
+}
+.infoskills p{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.footer {
+  background-color: #333; /* Color de fondo */
+  color: white; /* Color de texto */
+  padding: 20px; /* Espaciado interior */
+  text-align: center; /* Centrar texto */
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-content {
+  display: flex; /* Usar Flexbox */
+  justify-content: space-around; /* Espaciado entre secciones */
+  flex-wrap: wrap; /* Permitir que las secciones se ajusten en filas */
+}
+
+.footer-section {
+  flex: 1; /* Cada sección ocupa el mismo espacio */
+  margin: 10px; /* Margen entre secciones */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.footer-section a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Espacio arriba del pie de página */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+  .Navboxmenu{
+    padding: 0px 10px;
+  }
+  
+  .logobox a{
+    font-size: 40px;
+  }
+  .herobox{
+    flex-direction: column;
+    padding: 0px 20px;
+    height: auto;
+  }
+  .aboutussection{
+    padding: 100px 20px;
+  }
+  .contentus{
+    flex-direction: column;
+
+  }
+
+  .imgusdiv{
+    width: 100%;
+  }
+  .nosexd{
+    width: 100%;
+  }
+  .card h3{
+    font-size: 30px;
+  }
+  .card p{
+    font-size: 20px;
+  }
+  .cardbutonlink{
+    font-size: 20px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+  }
+  .imgusdiv img{
+    width: 100%;
+    
+  }
+  .titleus{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .parrapusp{
+    font-size: 10px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 50px;
+    margin-top: 10px;
+  }
+  .txtusdiv{
+    width: 100%;
+  }
+  .txtusdiv h1{
+    font-size: 60px;
+  }
+  .parrapus p{
+    font-size: 30px;
+  }
+  .carsection{
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
+  }
+  .servicecard{
+    width: 100%;
+  }
+  .servicecard p{
+    font-size: 20px;
+  }
+  .carsdskills{
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .txthero{
+    width: 100%;
+  }
+  .imghero{
+    width: 100%;
+  }
+  .h1titlehero{
+    font-size: 30px;
+  }
+  .skillsectionelements{
+    flex-direction: column;
+  }
+  .skillelement{
+    flex-direction: column;
+  }
+  .allskillsbox{
+    flex-direction: column;
+    padding: 100px 10px;
+  }
+  .card{
+    width: 100%;
+  }
+  .servicesection{
+    padding: 50px 20px;
+  }
+  .infoskills{
+    width: 100%;
+  }
+  .navmenu{
+    display: block;
+    cursor: pointer;
+    transition: all ease-out 0.4s;
+  }
+  .navlinksbox{
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    padding: 40px 20px;
+    background-color: black;
+    z-index: 1;
+    gap: 50px;
+    display: none;
+    transition: all ease-out 0.4s;
+
+  }
+  .mobilenavmenuocultar{
+    display: block;
+    transition: all ease-out 0.4s;
+  
+  }
+  .navmenuon .navlinks{
+    color: white;
+  }
+  .infoskills h1{
+    font-size: 50px;
+  }
+  .infoskills p{
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+  .titleus{
+    font-size: 30px;
+  }
+  .skillsttle{
+    font-size: 20px;
+  }
+  .carsdskills{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
