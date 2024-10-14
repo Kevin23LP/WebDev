@@ -28,3 +28,10 @@ navmenuicon.addEventListener('click', (e) => {
     }
 })
 
+window.addEventListener('touchmove', () => {
+
+    if (window.touchmove) {
+        navmenuaction.classList.remove('mobilenavmenuocultar');
+        
+    }
+})
