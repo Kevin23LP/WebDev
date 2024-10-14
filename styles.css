@@ -672,4 +672,7 @@ header{
     display: grid;
     grid-template-columns: auto;
   }
+  .infoskills h1{
+    font-size: 30px;
+  }
 }
