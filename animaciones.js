@@ -28,10 +28,9 @@ navmenuicon.addEventListener('click', (e) => {
     }
 })
 
-window.addEventListener('touch', () => {
-
-    if (window.touch) {
+document.addEventListener('click', (e) => {
+    if (!navmenuaction.contains(e.target)) {
         navmenuaction.classList.remove('mobilenavmenuocultar');
-        
     }
+
 })
